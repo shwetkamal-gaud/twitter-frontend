@@ -57,17 +57,6 @@ const Text: React.FC = () => {
         }
     };
     const applyUnderline = () => {
-        // const selection = window.getSelection();
-        // if (selection && selection.rangeCount > 0) {
-        //     const range = selection.getRangeAt(0);
-        //     const span = document.createElement('span');
-        //     span.style.textDecoration = 'underline';
-        //     span.textContent = selection.toString();
-
-        //     range.deleteContents();
-        //     range.insertNode(span);
-        //     setTooltipVisible(false);
-        // }
         document.execCommand('underline')
     };
     const handleKeyUp = () => {
@@ -174,7 +163,7 @@ const Text: React.FC = () => {
                             style={{
                                 position: "absolute",
                                 top: activeLine.top,
-                                left: '15.5rem',
+                                left: activeLine.left,
                                 zIndex: 1000,
                             }}
                         >
