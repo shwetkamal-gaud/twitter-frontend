@@ -1,8 +1,16 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 # Installation
 ```bash
-git clone
-
+git clone https://github.com/shwetkamal-gaud/text-editor.git
+```
+## Open the cloned Directory
+```bash
+cd text-editor
+```
+## Install the dependencies 
+```bash
+npm install
+```
 ## Getting Started
 
 First, run the development server:
