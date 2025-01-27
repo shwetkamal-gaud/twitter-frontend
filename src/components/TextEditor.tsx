@@ -64,13 +64,11 @@ const Text: React.FC = () => {
             const selection = window.getSelection();
             if (selection && selection.rangeCount > 0) {
                 const range = selection.getRangeAt(0);
-                const rect = range.getBoundingClientRect();
-
-
+                const rect = range.getBoundingClientRect()
                 if (rect.top !== 0 && rect.left !== 0) {
                     setActiveLine({
-                        top: rect.top + window.scrollY - 5,
-                        left: rect.left - 30,
+                        top:  window.scrollY - 42,
+                        left:  window.scrollX +5,
                     });
                 } else {
                     setActiveLine(null);
@@ -85,7 +83,7 @@ const Text: React.FC = () => {
             if (selection && selection.rangeCount > 0) {
                 const range = selection.getRangeAt(0);
                 const heading = document.createElement("h1");
-                heading.textContent = "New Heading";
+                heading.textContent = "New";
                 heading.style.margin = "0";
                 range.insertNode(heading);
                 setEditorContent(editorRef.current.innerHTML);
@@ -161,7 +159,7 @@ const Text: React.FC = () => {
                         <div
                             className=""
                             style={{
-                                position: "absolute",
+                                position: "relative",
                                 top: activeLine.top,
                                 left: activeLine.left,
                                 zIndex: 1000,
