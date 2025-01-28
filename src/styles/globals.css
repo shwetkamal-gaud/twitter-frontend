@@ -85,7 +85,7 @@ a {
   background-color: gray;
 }
 
-@media (min-width:600px) {
+@media (min-width:770px) {
   .left {
     left: 17% !important
   }
