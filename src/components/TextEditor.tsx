@@ -65,11 +65,11 @@ const Text: React.FC = () => {
             if (selection && selection.rangeCount > 0) {
                 const range = selection.getRangeAt(0);
                 const rect = range.getBoundingClientRect()
-                if (rect.top !== 0 && rect.left !== 0) {
-                    setActiveLine({
-                        top:  window.scrollY - 42,
-                        left:  window.scrollX +5,
-                    });
+                if (rect.top !== 0) {
+                    setActiveLine((prev) => ({
+                        top: rect.top - window.scrollY - 5, 
+                        left: prev ? prev.left : 0,      
+                    }));
                 } else {
                     setActiveLine(null);
                 }
@@ -157,9 +157,9 @@ const Text: React.FC = () => {
                     </div>
                     {activeLine !== null && (
                         <div
-                            className=""
+                            className="left"
                             style={{
-                                position: "relative",
+                                position: "absolute",
                                 top: activeLine.top,
                                 left: activeLine.left,
                                 zIndex: 1000,

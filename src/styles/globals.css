@@ -84,3 +84,9 @@ a {
   border-radius: 50%;
   background-color: gray;
 }
+
+@media (min-width:600px) {
+  .left {
+    left: 17% !important
+  }
+}
