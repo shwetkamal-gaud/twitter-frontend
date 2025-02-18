@@ -1,11 +1,11 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 # Installation
 ```bash
-git clone https://github.com/shwetkamal-gaud/text-editor.git
+git clone https://github.com/shwetkamal-gaud/twitter-frontend.git
 ```
 ## Open the cloned Directory
 ```bash
-cd text-editor
+cd twitter-frontend
 ```
 ## Install the dependencies 
 ```bash
