@@ -96,7 +96,7 @@ const Text: React.FC = () => {
         <div className="row container-fliud px-2 ">
             <div className="col-md-6 d-flex flex-column justify-content-between  border-end px-0" style={{ height: '100vh' }}>
                 <div>
-                    <div className='border-bottom px-3 py-2 w-100 d-flex justify-content-between align-items-center'>
+                    {/* <div className='border-bottom px-3 py-2 w-100 d-flex justify-content-between align-items-center'>
                         <h5>Write Post</h5>
                         <div className='d-flex justify-between gap-3 align-items-center p-1'>
                             <button className='btn border-secondary text-secondary px-4 gap-2 fw-bold ' style={{ borderRadius: '19px' }}>
@@ -109,7 +109,7 @@ const Text: React.FC = () => {
                                 <DownIcon />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='border-bottom px-3 py-2 w-100 d-flex justify-content-between align-items-center'>
                         <div className='d-flex jusitfy-content-between align-items-center gap-4'>
                             <b className='text-secondary fs-3'>B</b>
@@ -155,7 +155,7 @@ const Text: React.FC = () => {
                         style={{ minHeight: '200px', position: 'relative' }}
                     >
                     </div>
-                    {activeLine !== null && (
+                    {/* {activeLine !== null && (
                         <div
                             className="left"
                             style={{
@@ -169,7 +169,7 @@ const Text: React.FC = () => {
                                 +
                             </button>
                         </div>
-                    )}
+                    )} */}
                     {tooltipVisible && (
                         <div
                             className="tooltip-custom"

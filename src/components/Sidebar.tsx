@@ -67,16 +67,16 @@ const navbarData = {
 
     ],
     navFooter: [
-        {
-            id: 1,
-            name: 'Preferances',
-            icon: <PreferencesIcon />
-        },
-        {
-            id: 2,
-            name: 'Features Requets',
-            icon: <FeatureIcon />
-        }
+        // {
+        //     id: 1,
+        //     name: 'Preferances',
+        //     icon: <PreferencesIcon />
+        // },
+        // {
+        //     id: 2,
+        //     name: 'Features Requets',
+        //     icon: <FeatureIcon />
+        // }
     ]
 
 }
@@ -119,7 +119,7 @@ const Sidebar: React.FC = () => {
                                 ))}
                             </ul>
                             <ul className="navbar-nav mb-2 mb-lg-0 d-flex align-items-start flex-column justify-content-bewteen text-wrap flex-wrap px-2">
-                                {navFooter.map((item) => (
+                                {/* {navFooter && navFooter.map((item) => (
                                     <Link
                                         href={'#'}
                                         key={item.id}
@@ -132,8 +132,8 @@ const Sidebar: React.FC = () => {
                                         {item.icon}
                                         {item.name}
                                     </Link>
-                                ))}
-                                <div className='card w-100 '>
+                                ))} */}
+                                {/* <div className='card w-100 '>
                                     <div className='card-body d-flex gap-2 flex-column'>
                                         <div className='d-flex align-items-center  justify-content-between'>
                                             <span className='fw-bold' style={{ fontSize: '0.8rem' }}>
@@ -153,7 +153,7 @@ const Sidebar: React.FC = () => {
                                             <UpgradeIcon /> Upgrade Plan
                                         </button>
                                     </div>
-                                </div>
+                                </div> */}
                             </ul>
                         </div>
                     </div>
